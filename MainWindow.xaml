@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label Content="Перший член прогресії (a):" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFirstTerm" HorizontalAlignment="Left" Margin="150,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtFirstTerm" HorizontalAlignment="Left" Margin="173,15,0,0" VerticalAlignment="Top" Width="100" TextChanged="txtFirstTerm_TextChanged"/>
 
         <Label Content="Знаменник прогресії (r):" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCommonRatio" HorizontalAlignment="Left" Margin="150,40,0,0" VerticalAlignment="Top" Width="100"/>

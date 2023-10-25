@@ -24,19 +24,20 @@ namespace Geometric
         public MainWindow()
         {
             InitializeComponent();
-            progression = new GeometricProgression();
+            progression = new GeometricProgression(1.0, 2.0);
         }
 
         private void btnNextTerm_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (double.TryParse(txtFirstTerm.Text, out double a) && double.TryParse(txtCommonRatio.Text, out double r))
             {
+                progression = new GeometricProgression(a, r);
                 double nextTerm = progression.GetNextTerm();
-                txtResult.Text = $"Наступний член прогресії: {nextTerm}";
+                txtResult.Text = $"Наступний член: {nextTerm}";
             }
-            catch (Exception ex)
+            else
             {
-                txtResult.Text = "Помилка: " + ex.Message;
+                txtResult.Text = "Введіть коректні значення для a та r.";
             }
         }
 
@@ -52,6 +53,11 @@ namespace Geometric
             {
                 txtResult.Text = "Помилка: " + ex.Message;
             }
+        }
+
+        private void txtFirstTerm_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

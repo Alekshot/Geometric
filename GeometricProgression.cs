@@ -8,34 +8,28 @@ namespace Geometric
 {
     internal class GeometricProgression
     {
-        private double a;   // Перший член прогресії
-        private double r;   // Знаменник прогресії
+        double a;   // Перший член прогресії
+        double r;   // Знаменник прогресії
 
-        public GeometricProgression()
-        {
-            // Конструктор зі значеннями за замовчуванням
-            a = 1.0;  // Перший член прогресії (зазвичай 1)
-            r = 2.0;  // Знаменник прогресії (зазвичай 2)
-        }
-
-        public GeometricProgression(double firstTerm, double commonRatio)
+        public GeometricProgression(double a, double r)
         {
             // Конструктор зі специфікованими значеннями
-            a = firstTerm;
-            r = commonRatio;
+            this.a = a;
+            this.r = r;
         }
 
         public double GetNextTerm()
         {
             // Метод для знаходження наступного члена прогресії
-            return a * r;
+            a *= r;
+            return a;
         }
 
         public double GetSumOfNextTerms(int k)
         {
             // Метод для знаходження суми наступних k членів прогресії
             double sum = 0;
-            double currentTerm = a;
+            double currentTerm = this.a;
 
             for (int i = 0; i < k; i++)
             {
@@ -44,6 +38,16 @@ namespace Geometric
             }
 
             return sum;
+        }
+
+        public double A
+        {
+            get { return this.a;  }
+        }
+
+        public double R
+        {
+            get { return this.r; }
         }
     }
 }
