@@ -8,14 +8,28 @@ namespace Geometric
 {
     internal class GeometricProgression
     {
-        double a;   // Перший член прогресії
-        double r;   // Знаменник прогресії
+        public double a;  // Перший член прогресії
+        public double r;  // Знаменник прогресії
+
+        public GeometricProgression()
+        {
+            // Конструктор за замовчуванням
+            a = 0;
+            r = 0;
+        }
 
         public GeometricProgression(double a, double r)
         {
             // Конструктор зі специфікованими значеннями
             this.a = a;
             this.r = r;
+        }
+
+        public GeometricProgression(double a)
+        {
+            Random random = new Random();
+            r = random.NextDouble();
+            this.a = a;
         }
 
         public double GetNextTerm()

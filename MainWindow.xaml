@@ -7,19 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Перший член прогресії (a):" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFirstTerm" HorizontalAlignment="Left" Margin="173,15,0,0" VerticalAlignment="Top" Width="100" TextChanged="txtFirstTerm_TextChanged"/>
+        <Label Content="Перший член прогресії (a):" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFirstTerm" HorizontalAlignment="Left" Margin="173,52,0,0" VerticalAlignment="Top" Width="100" TextChanged="txtFirstTerm_TextChanged"/>
 
-        <Label Content="Знаменник прогресії (r):" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCommonRatio" HorizontalAlignment="Left" Margin="150,40,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Знаменник прогресії (r):" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCommonRatio" HorizontalAlignment="Left" Margin="150,77,0,0" VerticalAlignment="Top" Width="100"/>
 
-        <Label Content="Кількість членів (k):" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtK" HorizontalAlignment="Left" Margin="150,70,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Кількість членів (k):" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtK" HorizontalAlignment="Left" Margin="150,107,0,0" VerticalAlignment="Top" Width="100"/>
 
-        <Button Content="Знайти наступний член" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="180" Click="btnNextTerm_Click"/>
-        <Button Content="Знайти суму наступних k членів" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="180" Click="btnSumOfNextTerms_Click"/>
+        <Button Content="Знайти наступний член" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top" Width="180" Click="btnNextTerm_Click"/>
+        <Button Content="Знайти суму наступних k членів" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="180" Click="btnSumOfNextTerms_Click"/>
 
-        <Label Content="Результат:" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="300" Height="80"/>
+        <Label Content="Результат:" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="10,217,0,0" VerticalAlignment="Top" Width="300" Height="80"/>
+        <Menu  HorizontalAlignment="Center" Height="29" VerticalAlignment="Top" Width="800" Margin="0,1,0,0">
+            <MenuItem x:Name="MenuItem1" Header="Спадкування" Height="23" Width="86" Click="MenuItem1_Click"/>
+            <MenuItem Header="Абстракція" Height="23" Width="86" Click="MenuItem2_Click"/>
+        </Menu>
     </Grid>
 </Window>

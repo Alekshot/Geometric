@@ -1,0 +1,29 @@
+﻿<Window x:Class="Geometric.Inheritance"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Geometric"
+        mc:Ignorable="d"
+        Title="Inheritance" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Інформація поля" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Назва поля:"/>
+                <TextBox Name="CropNameTextBox"/>
+            </StackPanel>
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Вага посіяного насіння (R):"/>
+                <TextBox Name="CropRTextBox"/>
+            </StackPanel>
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Площа поля (S) для Картопляного поля:"/>
+                <TextBox Name="PotatoCropSTextBox"/>
+            </StackPanel>
+            <Button Content="Розрахувати урожай всього поля" Click="CalculateYieldButton_Click" Margin="0,20" HorizontalAlignment="Center"/>
+            <TextBlock Name="ResultTextBlock" Margin="0,20" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

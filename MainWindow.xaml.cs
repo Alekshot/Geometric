@@ -59,5 +59,17 @@ namespace Geometric
         {
 
         }
+
+        private void MenuItem1_Click(object sender, RoutedEventArgs e)
+        {
+            var InheritanceWindow = new Inheritance();
+            InheritanceWindow.Show();
+        }
+
+        private void MenuItem2_Click(object sender, RoutedEventArgs e)
+        {
+            var AbstractWindow = new Abstract();
+            AbstractWindow.Show();
+        }
     }
 }
