@@ -74,8 +74,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Class_laba2\RigthTriangle.cs" />
-    <Compile Include="Class_laba2\Triangle.cs" />
+    <Compile Include="Class_laba2\PotatoCrop.cs" />
+    <Compile Include="Class_laba2\Crop.cs" />
     <Compile Include="Class_laba3\Conus.cs" />
     <Compile Include="Class_laba3\Figura3D.cs" />
     <Compile Include="Class_laba3\Piramid.cs" />
